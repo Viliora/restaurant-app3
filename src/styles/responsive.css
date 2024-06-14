@@ -1,0 +1,125 @@
+@media (max-width: 599px) {
+  #restaurants {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .hero-image {
+    max-width: 100%;
+  }
+  .restaurant-detail__poster {
+    width: 100%;
+    height: auto;
+  }
+  .content__heading {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  #restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .content__heading {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .content__heading {
+    width: 100%;
+    height: auto;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  .drawer {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    z-index: 10;
+  }
+  .drawer.open {
+    transform: translateX(0);
+    z-index: 10;
+  }
+  .drawer a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .content__heading {
+    width: 100%;
+    height: auto;
+  }
+  .navbar .brand h1 {
+    font-size: 2em;
+    padding: 0.5rem;
+  }
+  .nav-menu {
+    gap: 0.5rem;
+  }
+  .menu-button {
+    font-size: 1.2rem;
+  }
+  .drawer {
+    width: 250px;
+  }
+  footer #footerTools {
+    flex-direction: row;
+  }
+  .restaurant-detail__poster {
+    width: 80%;
+    height: auto;
+    margin: 0 auto; 
+  }
+}
+
+@media (min-width: 1025px) {
+  .content__heading {
+    width: 100%;
+    height: auto;
+  }
+  .navbar {
+    padding: 2rem;
+  }
+  .nav-menu {
+    gap: 2rem;
+  }
+  .menu-button {
+    font-size: 2rem;
+  }
+  .drawer {
+    width: 300px;
+  }
+  .restaurant-detail__poster {
+    width: 60%;
+    height: auto;
+    margin: 0 auto; 
+  }
+  .restaurant-item__content p {
+    padding: 10px;
+  }
+}
